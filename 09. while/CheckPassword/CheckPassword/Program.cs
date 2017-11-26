@@ -19,9 +19,11 @@ namespace CheckPassword {
 				StartProgram();
 			}
 			else {
-				Console.WriteLine("Неправильно! Хаха, ты не пройдешь!");
+                while (true)
+                 Console.WriteLine("Неправильно! Хаха, ты не пройдешь!");
 				Console.ReadLine();
-				Environment.Exit(0);
+                  
+				
 			}
 		}
 

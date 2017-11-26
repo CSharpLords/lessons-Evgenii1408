@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace CheckPassword {
 	class Program {
 		static void Main(string[] args) {
+            int attempt = 0;
+            
+           
 			string password = "Супер пароль!";
-            while (true) {
+            while (attempt < 5) {
                 Console.WriteLine("Чтобы пользоваться моей программой, введи пароль!");
                 string answer = Console.ReadLine();
 
@@ -21,8 +25,9 @@ namespace CheckPassword {
                 }
                 else {
                     Console.WriteLine("Неправильно! Хаха, ты не пройдешь!");
-                    Console.ReadLine();
-                    Environment.Exit(0);
+                    
+                    attempt = attempt + 1;
+                    Console.WriteLine(attempt);
                 }
             }
 		}
