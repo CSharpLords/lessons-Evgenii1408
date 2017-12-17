@@ -8,67 +8,67 @@ namespace Quest {
 	class Program {
 		static void Main(string[] args) {
 			Console.ForegroundColor = ConsoleColor.DarkGreen;
-			Console.WriteLine("Ты - супергерой. Твоя задача - вызволить принцессу из плена Всемирной Сети, куда она попала, по неосторожности ткнув в рекламный баннер. Выбери действие:");
+            Console.WriteLine("ты - крутой программист и самый лучший друг Василия.У тебя есть компьютер?");
 			Console.ForegroundColor = ConsoleColor.Gray;
 
 			Console.WriteLine();
 			Thread.Sleep(500);
-			Console.WriteLine("1. Поиграть в Доту");
+			Console.WriteLine("1. нет");
 			Thread.Sleep(500);
-			Console.WriteLine("2. Узнать на каком сайте она застряла");
+			Console.WriteLine("2. да");
 			int answer1 = int.Parse(Console.ReadLine());
 			Console.WriteLine();
 			if (answer1 == 1) {
-				Console.WriteLine("Конец игры! Ты просидел в Доте до утра, и принцессу спас другой хакер");
+				Console.WriteLine("Ну ок, тогда нам не о чем говорить");
 				Console.ReadLine();
 				Environment.Exit(0);
 			}
 			else if (answer1 == 2) {
 				Console.ForegroundColor = ConsoleColor.DarkGreen;
-				Console.WriteLine("Оказывается, принцессе пришло письмо с рекламой суперстойкой помады, и там был баннер со ссылкой на сайт dontclickme.noob.");
+                Console.WriteLine("Сколько часов в неделю ты проводишь за ним");
 				Console.ForegroundColor = ConsoleColor.Gray;
 			}
 			else {
 				Console.ForegroundColor = ConsoleColor.DarkRed;
-				Console.WriteLine("Введен невалидный вариант! Конец игры");
+				Console.WriteLine(14);
 				Console.ReadLine();
 				Environment.Exit(0);
 			}
 
 			Console.WriteLine();
 			Thread.Sleep(500);
-			Console.WriteLine("1. Послушаться совета в адресе сайта и поиграть в Доту");
+			Console.WriteLine("1. ");
 			Thread.Sleep(500);
-			Console.WriteLine("2. Перейти на сайт");
-			Thread.Sleep(500);
-			Console.WriteLine("3. Обновить антивирус, а потом перейти на сайт");
-			int answer2 = int.Parse(Console.ReadLine());
-			Console.WriteLine();
+            Console.WriteLine("2. ");
+            Thread.Sleep(500);
+            
+            int answer2 = int.Parse(Console.ReadLine());
+            Console.WriteLine();
 			if (answer2 == 1) {
-				Console.WriteLine("Конец игры! Проигрыш - другой хакер спас принцессу");
+                Console.WriteLine("А большую часть этого времени ты работаешь или отдыхаешь?");
 				Console.ReadLine();
 				Environment.Exit(0);
 			}
 			else if (answer2 == 2) {
-				Console.WriteLine("Конец игры! Проигрыш - игрок заразился тем же вирусом, что и принцесса, застрял на том же сайте со сломанным компьютером");
+				Console.WriteLine("А большую часть этого времени ты работаешь или отдыхаешь?");
 				Console.ReadLine();
 				Environment.Exit(0);
 			}
 			else if (answer2 == 3) {
 				Console.ForegroundColor = ConsoleColor.DarkGreen;
-				Console.WriteLine("Игрок встречает противника - Капча-Монстра, который не дает обновить антивирус. Чтобы его победить, нужно решить задачку: сколько будет 2 + 2 * 2?");
+                Console.WriteLine("работаю");
 				Console.ForegroundColor = ConsoleColor.Gray;
 			}
 			else {
 				Console.ForegroundColor = ConsoleColor.DarkRed;
-				Console.WriteLine("Введен невалидный вариант! Конец игры");
+                Console.WriteLine("Ты и отдохнуть не забывай");
 				Console.ReadLine();
 				Environment.Exit(0);
 			}
 
 			Console.WriteLine();
 			Thread.Sleep(500);
-			Console.WriteLine("1. А, ну ее, математика для нубов! Пойду в Доту поиграю!");
+			Console.WriteLine("1. ");
 			Thread.Sleep(500);
 			Console.WriteLine("2. Проверить исходный код Капча-Монстра");
 			Thread.Sleep(500);
@@ -82,7 +82,7 @@ namespace Quest {
 			}
 			else if (answer3 == 2) {
 				Console.ForegroundColor = ConsoleColor.DarkGreen;
-				Console.WriteLine("Игрок вскрывает код Капча-Монстра и видит, что тот печатает черным цветом некоторые символы. Ух ты! Их не видно на черном фоне!");
+				Console.WriteLine("А большую часть этого времени ты работаешь или отдыхаешь?");
 				Console.ForegroundColor = ConsoleColor.Gray;
 			}
 			else if (answer3 == 3) {
@@ -92,7 +92,7 @@ namespace Quest {
 			}
 			else {
 				Console.ForegroundColor = ConsoleColor.DarkRed;
-				Console.WriteLine("Введен невалидный вариант! Конец игры");
+				Console.WriteLine("А большую часть этого времени ты работаешь или отдыхаешь?");
 				Console.ReadLine();
 				Environment.Exit(0);
 			}
