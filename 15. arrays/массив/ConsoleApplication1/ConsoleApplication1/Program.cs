@@ -14,9 +14,9 @@ namespace ConsoleApplication1
             {
                 if (Massif[n] == 5)
                 {
-
-                } Console.WriteLine("Мы нашли 5 в массиве,и его порядковый номер:" + n);
-                break;
+                    Console.WriteLine("Мы нашли 5 в массиве,и его порядковый номер:" + n);
+                    break;
+                }
             }
             Console.ReadLine();
         }
